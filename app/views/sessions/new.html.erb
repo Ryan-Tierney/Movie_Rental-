@@ -1,0 +1,19 @@
+
+<center>
+
+<h1> Log In Here!</h1>
+
+<%= form_tag(sessions_path) do %> 
+<%= label_tag :username %>:
+<%= text_field_tag :username %> <br>
+
+<%= label_tag :password %>: 
+<%= text_field_tag :password %> <br>
+
+
+
+<%= submit_tag 'login' %> <br>
+<hr>
+Or <br> <a href='users/new'>Sign Up Here 
+
+<% end %>

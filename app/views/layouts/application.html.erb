@@ -7,9 +7,25 @@
 
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
+    
+    
+    <%= link_to "Sign up", users_path %>
+    <%= link_to "Sign in", login_path %>
+ 
+   
+    <center> 
+
+    <h1> Sweet Tea Movie Rental </h1>
+    <hr>
+    </center>
+    </head>
 
   <body>
     <%= yield %>
   </body>
+  <hr>
+
+  <footer>
+
+  </footer>
 </html>

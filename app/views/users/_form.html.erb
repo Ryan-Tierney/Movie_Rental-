@@ -1,0 +1,22 @@
+<center>
+<h1> Register Here! </h1>
+
+<%= form_for @user do |f| %> 
+    <%= f.label 'username:' %> 
+    <%= f.text_field 'username' %> <br>
+
+    <%= f.label 'password:' %> 
+    <%= f.text_field 'password_digest' %> <br>
+
+    <%= f.label 'age:' %> 
+    <%= f.number_field 'age' %> <br>
+
+    <%= f.label 'Dollars:' %> 
+    <%= f.number_field 'money' %> <br>
+
+    <%= f.label 'admin:' %> 
+    <%= f.check_box 'admin' %> <br>
+
+    <%= f.submit 'Register' %> 
+
+<% end %> 

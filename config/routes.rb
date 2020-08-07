@@ -3,6 +3,8 @@ Rails.application.routes.draw do
 
   resources :users
   resources :movies 
-
+  get '/login' => 'sessions#new'
+  post '/sessions' => 'sessions#create'
+  post '/logout' => 'sessions#destroy'
   root 'welcome#home' 
 end
